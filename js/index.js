@@ -41,3 +41,17 @@ function closeClock(){
   demo.reset();
   $("p").removeClass('strikethrough');
 }
+
+
+var myDate = new Date();
+var greeting = document.getElementById('greeting');
+
+/* hour is before noon */
+if ( myDate.getHours() < 12 )
+{
+    greeting.innerHTML = "Good Morning!";
+}
+else
+{
+    greeting.innerHTML = "Hi there 👋!";
+}
