@@ -1,0 +1,218 @@
+html, body{
+  width: 100%;
+  height: 100%;
+  background-color: #FAFBFC;
+  color: #212121;
+  box-sizing: content-box;
+  font-family: 'Open Sans', sans-serif;
+  overflow: hidden;
+}
+
+h1{
+  font-size: 40px;
+  font-weight: 700;
+  margin-top: 0;
+  line-height: 48px;
+}
+
+h2{
+  font-size: 28px;
+  font-weight: 600;
+  margin-top: 0;
+  line-height: 32px;
+  margin: 24px;
+  color: #212121;
+}
+
+h3{
+  text-align: right;
+  color: white;
+  font-weight: 400;
+  font-size: 88px;
+  margin: 0 auto;
+  align-items: center;
+  padding-top: 40px;
+}
+
+h4{
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 0;
+  color: #333;
+  line-height: 32px;
+}
+
+p{
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 0;
+  color: #333;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.contentWrapper{
+  max-width: 960px;
+  margin: 0px auto;
+  padding: 80px 64px 80px 64px;
+}
+
+.row{
+  width: 560px;
+  display: inline-flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+}
+
+.row2{
+  width: 96%;
+  margin: 0 auto;
+  justify-content: space-between;
+  display: inline-flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+}
+
+.checkListWrapper{
+  margin-top: 48px;
+}
+
+.check{
+  width: 560px;
+  height: 48px;
+  margin: 8px 0px 8px 0px;
+}
+
+.timerWrapper{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.32);
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  display: none;
+  -webkit-backdrop-filter: blur(6px);
+}
+
+.timer {
+  width: 56%;
+  background-color: white;
+  border-radius: 2px;
+}
+
+.timerDisplay{
+  width: 100%;
+  height: 240px;
+  background-color: #34C2A5;
+  align-items: center;
+}
+
+.timerDisplay h3{
+  margin-right: 56px;
+}
+
+#close{
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#clock{
+  font-weight: 700;
+}
+
+button{
+  cursor: pointer;
+}
+
+.startButton{
+  margin-left: 32px;
+  margin-top: 32px;
+  height: 32px;
+  width: 80px;
+  border-radius: 4px;
+  outline: none;
+  border: 1px solid white;
+  background-color: white;
+  color: #212121;
+  font-size: 14px;
+  font-weight: 600;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.16r);
+}
+
+.stopButton{
+  margin-left: 8px;
+  margin-top: 32px;
+  height: 32px;
+  width: 80px;
+  border-radius: 4px;
+  outline: none;
+  border: 1px solid white;
+  background-color: white;
+  color: #555555;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.numbersInput{
+  margin-left: -360px;
+}
+
+input{
+  outline: none;
+  width: 32px;
+  height: 28px;
+  border: 1px solid #e0e0e0;
+  background-color: #FAFBFC;
+  border-radius: 4px;
+}
+
+input:focus{
+  border: 1px solid #34C2A5;
+}
+
+.fa-users{
+  color: #666;
+  padding-right: 8px;
+}
+
+/* Strikethrough */
+
+.strikethrough {
+	display: inline-block;
+	position: relative;
+}
+
+.strikethrough:after {
+	content: '';
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 4px;
+	margin-top: -0.7em;
+	background: #34C2A5;
+	transform-origin: center left;
+	animation: strikethrough 1s 0.5s cubic-bezier(.55, 0, .1, 1) 1;
+	transition: transform 0.5s cubic-bezier(.55, 0, .1, 1);
+  white-space: nowrap;
+}
+
+/* Keyframes for initial animation */
+
+@keyframes strikethrough {
+		from {
+				transform: scaleX(0);
+        width: 0;
+		}
+		to {
+				transform: scaleX(1);
+        width: 100%;
+		}
+}
