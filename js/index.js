@@ -9,13 +9,12 @@ $(document).ready(function() {
 
   });
 });
+var demo = new CountUp("myTargetElement", 0, 2, 360000, options);
+demo.setEndVal(580);
 
 $('#numberUsers').change(function(event){
   demo.setEndVal($('#numberUsers').val()*580);
 });
-
-var numberUsers = $('#numberUsers').val();
-var price = (numberUsers * 500);
 
 var options = {
   useEasing : true,
@@ -25,8 +24,6 @@ var options = {
   prefix : '€',
   suffix : ''
 };
-
-var demo = new CountUp("myTargetElement", 0, 2, 360000, options);
 
 var clock = document.getElementById('clock');
 var timer = document.getElementsByClassName('timerWrapper')[0];
