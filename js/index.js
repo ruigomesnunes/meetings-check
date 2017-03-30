@@ -1,11 +1,3 @@
-var options = {
-  useEasing : true,
-  useGrouping : true,
-  separator : ',',
-  decimal : '.',
-  prefix : '&euro;',
-  suffix : ''
-};
 
 $(document).ready(function() {
   $(document).on('click','.item', function(event){
@@ -55,3 +47,12 @@ else
 {
     greeting.innerHTML = "Hi there 👋!";
 }
+
+var options = {
+  useEasing : true,
+  useGrouping : true,
+  separator : ',',
+  decimal : '.',
+  prefix : '&euro;',
+  suffix : ''
+};
