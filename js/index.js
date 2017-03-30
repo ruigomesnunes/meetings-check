@@ -1,3 +1,12 @@
+var options = {
+  useEasing : true,
+  useGrouping : true,
+  separator : ',',
+  decimal : '.',
+  prefix : '&euro;',
+  suffix : ''
+};
+
 $(document).ready(function() {
   $(document).on('click','.item', function(event){
     // console.log(event);
@@ -15,15 +24,6 @@ demo.setEndVal(580);
 $('#numberUsers').change(function(event){
   demo.setEndVal($('#numberUsers').val()*580);
 });
-
-var options = {
-  useEasing : true,
-  useGrouping : true,
-  separator : ',',
-  decimal : '.',
-  prefix : '&euro;',
-  suffix : ''
-};
 
 var clock = document.getElementById('clock');
 var timer = document.getElementsByClassName('timerWrapper')[0];
