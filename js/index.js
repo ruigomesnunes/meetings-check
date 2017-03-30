@@ -21,13 +21,14 @@ var options = {
   useGrouping : true,
   separator : ',',
   decimal : '.',
-  prefix : '€',
+  prefix : '&euro;',
   suffix : ''
 };
 
 var clock = document.getElementById('clock');
 var timer = document.getElementsByClassName('timerWrapper')[0];
 var close = document.getElementById('close');
+var time = document.getElementById('myTargetElement').innerHTML;
 
 function showClock(){
   timer.style.display = "inline-flex";
@@ -38,6 +39,8 @@ function closeClock(){
   demo.reset();
   $("p").removeClass('strikethrough');
 }
+
+
 
 
 var myDate = new Date();
